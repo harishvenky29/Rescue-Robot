@@ -1,0 +1,20 @@
+# YOLOv5 Custom Dataset Configuration
+# Autonomous Rescue Robot - Object Detection
+# Author: Harish Venkatesan Muthukumaran Rajamani
+# University of York - MSc Robotics Project
+#
+# Objects to detect:
+#   - Mr.York (victim/person representation)
+#   - Car (vehicle obstacle)
+#   - Blocks (debris/obstacle)
+
+# Dataset paths
+train: ../dataset/train/images
+val: ../dataset/val/images
+test: ../dataset/test/images
+
+# Number of classes
+nc: 3
+
+# Class names
+names: ['Mr.York', 'Car', 'Blocks']
