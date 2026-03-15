@@ -7,6 +7,7 @@
 [![Arduino](https://img.shields.io/badge/Arduino-C++-00979D?logo=arduino&logoColor=white)](https://www.arduino.cc/)
 [![YOLOv5](https://img.shields.io/badge/YOLOv5-Object%20Detection-00FFFF)](https://github.com/ultralytics/yolov5)
 [![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-5C3EE8?logo=opencv)](https://opencv.org/)
+[![License](https://img.shields.io/badge/License-All%20Rights%20Reserved-red.svg)](LICENSE)
 
 ---
 
@@ -110,6 +111,43 @@ The full system achieved **86% mAP** on custom object detection and demonstrated
 - USB camera
 - 3× Arduino boards connected via USB serial
 
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/<your-username>/rescue-robot.git
+cd rescue-robot
+
+# Install Python dependencies
+pip install -r requirements.txt
+```
+
+### Upload Arduino Firmware
+
+1. Open `arduino/ir_sensor/ir_sensor.ino` in Arduino IDE → upload to **sensor Arduino**
+2. Open `arduino/motor_control/motor_control.ino` → upload to **both motor Arduinos**
+
+### Train the Object Detection Model
+
+```bash
+# Prepare dataset in dataset/{train,val,test}/{images,labels}
+chmod +x yolov5_config/train_model.sh
+./yolov5_config/train_model.sh
+```
+
+### Run the Robot
+
+```bash
+# Option 1: Obstacle avoidance only (no camera)
+python python/robot_controller.py
+
+# Option 2: Object detection only (camera feed)
+python python/detect_objects.py
+
+# Option 3: Full autonomous mode
+python python/integrated_controller.py
+```
+
 ---
 
 ## Results
@@ -121,6 +159,14 @@ The full system achieved **86% mAP** on custom object detection and demonstrated
 | Sensor coverage | 360° (IR + Ultrasonic) |
 | Movement | Omnidirectional (Mecanum) |
 | Control architecture | 3 Arduinos + Raspberry Pi |
+
+### YOLOv5 Detection Output
+
+| Victim Detection (Mr. York) | Obstacle Detection (Blocks) |
+|:--:|:--:|
+| ![Mr. York Detection](docs/images/victim_detection.png) | ![Blocks Detection](docs/images/blocks_detection.png) |
+
+> Real-time inference detecting victims (Mr. York — 83% confidence) and obstacles (Blocks — up to 87% confidence) in the maze environment.
 
 ---
 
@@ -137,6 +183,11 @@ The full system achieved **86% mAP** on custom object detection and demonstrated
 
 ---
 
+## License
+
+This project is proprietary. All rights reserved — see [LICENSE](LICENSE) for details.
+
+---
 
 ## Acknowledgements
 
