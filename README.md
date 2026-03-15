@@ -7,6 +7,7 @@
 [![Arduino](https://img.shields.io/badge/Arduino-C++-00979D?logo=arduino&logoColor=white)](https://www.arduino.cc/)
 [![YOLOv5](https://img.shields.io/badge/YOLOv5-Object%20Detection-00FFFF)](https://github.com/ultralytics/yolov5)
 [![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-5C3EE8?logo=opencv)](https://opencv.org/)
+[![License](https://img.shields.io/badge/License-All%20Rights%20Reserved-red.svg)](LICENSE)
 
 
 ---
@@ -138,7 +139,8 @@ The full system achieved **86% mAP** on custom object detection and demonstrated
 
 ---
 
-## Acknowledgements
+## License
 
-- **Supervisors**: Dr. Mark Post, Dr. Peter Ellison — University of York
-- [Ultralytics YOLOv5](https://github.com/ultralytics/yolov5)
+This project is proprietary. All rights reserved — see [LICENSE](LICENSE) for details.
+
+---
