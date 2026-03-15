@@ -180,12 +180,6 @@ This was part of a 4-person MSc group project. The broader system also included 
 
 ---
 
-## License
-
-This project is licensed under the MIT License — see [LICENSE](LICENSE) for details.
-
----
-
 ## Acknowledgements
 
 - **Supervisors**: Dr. Mark Post, Dr. Peter Ellison — University of York
