@@ -121,7 +121,7 @@ The full system achieved **86% mAP** on custom object detection and demonstrated
 |:--:|:--:|
 | ![Mr. York Detection](docs/images/blocks_detection.png) | ![Blocks Detection](docs/images/victim_detection.png) |
 
-|https://www.youtube.com/watch?v=4F5axwGFdGk|
+|https://www.youtube.com/watch?v=4F5axwGFdGk |
 
 > Real-time inference detecting victims (Mr. York — 83% confidence) and obstacles (Blocks — up to 87% confidence) in the maze environment.
 
