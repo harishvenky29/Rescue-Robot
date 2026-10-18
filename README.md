@@ -141,8 +141,6 @@ The full system achieved **86% mAP** on custom object detection and demonstrated
 
 ---
 
-## License
-
 This project is proprietary. All rights reserved — see [LICENSE](LICENSE) for details.
 
 ---
