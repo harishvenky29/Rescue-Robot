@@ -123,6 +123,12 @@ The full system achieved **86% mAP** on custom object detection and demonstrated
 
 > Real-time inference detecting victims (Mr. York — 83% confidence) and obstacles (Blocks — up to 87% confidence) in the maze environment.
 
+### Robot in Action
+
+| Maze Arena with Mr. York | Test Track |
+|:---:|:---:|
+| ![Rescue robot in the maze arena with Mr. York](images/WhatsApp%20Image%202026-10-18%20at%2011.38.15.jpeg) | ![Rescue robot on the test track](images/WhatsApp%20Image%202026-10-18%20at%2011.38.36.jpeg) |
+
 ---
 
 ## Tech Stack
